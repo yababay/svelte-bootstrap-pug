@@ -1,11 +1,18 @@
 import switchHash from './router.js'
-import Github from './components/Github.svelte'
+import GithubLink from './components/GithubLink.svelte'
+import CommunityLink from './components/CommunityLink.svelte'
 import settings from './settings.json'
 
 const navLinks = document.querySelector('nav ul')
 
+if(settings.withCommunity){
+    new CommunityLink({
+        target: navLinks, 
+    })
+}
+
 if(settings.githubLink){
-    new Github({
+    new GithubLink({
         target: navLinks, 
         props: {link: settings.githubLink}
     })

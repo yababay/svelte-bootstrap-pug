@@ -5,7 +5,7 @@
     export let title = 'Проект на Github&apos;е'
 </script>
 
-<li class="navbar-item icon-holder">
+<li class="navbar-item icon-holder ms-3">
     <a class="navbar-link link-secondary" href={link} target="_blank">
         <Icon {title}/>
     </a>
