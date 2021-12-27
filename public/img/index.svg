@@ -26,7 +26,7 @@
      inkscape:pagecheckerboard="0"
      showgrid="false"
      inkscape:zoom="19.246563"
-     inkscape:cx="15.976879"
+     inkscape:cx="16.028836"
      inkscape:cy="19.743785"
      inkscape:window-width="1920"
      inkscape:window-height="1051"
@@ -37,14 +37,24 @@
   <title
      id="title2">empty</title>
   <g
+     aria-label="H"
+     id="text2433"
+     style="font-size:20px;line-height:1.25;fill:#cccccc;stroke:#666666;stroke-width:0.157271;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="matrix(0.95376894,0,0,0.95376894,-0.17221261,14.174357)">
+    <path
+       d="m 3.0401236,-13.639257 h 1.9726562 v 5.9765625 h 7.1679692 v -5.9765625 h 1.972656 V 0.94082117 H 12.180749 V -6.0025382 H 5.0127798 V 0.94082117 H 3.0401236 Z"
+       id="path3439"
+       style="fill:#cccccc;stroke:#666666;stroke-width:0.157271;stroke-miterlimit:4;stroke-dasharray:none" />
+  </g>
+  <g
      aria-label="w"
      id="text4576"
-     style="font-size:20px;line-height:1.25;fill:#666666;stroke:#808080;stroke-width:0.4;stroke-miterlimit:4;stroke-dasharray:none"
-     transform="matrix(1.0175349,0,0,1.0175349,4.4932713,12.954295)">
+     style="font-size:20px;line-height:1.25;fill:#999999;stroke:#4d4d4d;stroke-width:0.147415;stroke-miterlimit:4;stroke-dasharray:none"
+     transform="matrix(0.95615287,0,0,0.95615287,4.7572471,13.498982)">
     <path
        d="m -3.9391589,-10.383575 h 1.796875 l 2.24609373,8.535156 2.23632817,-8.535156 h 2.1191406 l 2.2460937,8.535156 2.2363282,-8.535156 H 10.738575 L 7.8772473,0.5539248 H 5.7581067 L 3.4045911,-8.410919 1.0413098,0.5539248 h -2.1191406 z"
        id="path5780"
-       style="fill:#666666;stroke:#808080;stroke-width:0.4;stroke-miterlimit:4;stroke-dasharray:none" />
+       style="fill:#999999;stroke:#4d4d4d;stroke-width:0.147415;stroke-miterlimit:4;stroke-dasharray:none" />
   </g>
   <metadata
      id="metadata5871">
@@ -55,14 +65,4 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     aria-label="H"
-     id="text2433"
-     style="font-size:20px;line-height:1.25;fill:#b3b3b3;stroke:#4d4d4d;stroke-width:0.172929;stroke-miterlimit:4;stroke-dasharray:none"
-     transform="matrix(1.0698015,0,0,1.0698015,-1.0616522,14.813968)">
-    <path
-       d="m 3.0401236,-13.639257 h 1.9726562 v 5.9765625 h 7.1679692 v -5.9765625 h 1.972656 V 0.94082117 H 12.180749 V -6.0025382 H 5.0127798 V 0.94082117 H 3.0401236 Z"
-       id="path3439"
-       style="fill:#b3b3b3;stroke:#4d4d4d;stroke-width:0.172929;stroke-miterlimit:4;stroke-dasharray:none" />
-  </g>
 </svg>

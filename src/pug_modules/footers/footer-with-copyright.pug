@@ -1,0 +1,11 @@
+- var year = new Date().getFullYear()
+
+footer.footer.bg-light.text-center.w-100
+    .container
+        if copyright
+            | &copy;
+            | &nbsp;
+            span= copyright
+            | ,&nbsp;
+            span= year
+

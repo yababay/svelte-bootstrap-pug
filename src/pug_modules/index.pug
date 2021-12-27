@@ -4,21 +4,30 @@ html(lang="ru")
         meta(charset='utf-8')
         meta(name='viewport' content='width=device-width,initial-scale=1')
 
-        link(rel='icon' type='image/png' href='/img/index.svg')
-        link(rel='stylesheet' href='/css/bootstrap.min.css')
+        if withBootstrap
+            link(rel='stylesheet' href='/vendors/css/bootstrap.min.css')
+            script(defer src='/vendors/js/bootstrap.bundle.min.js')
+
+        if headerMainFooter
+            link(rel='stylesheet' href='/css/header-main-footer.css')
+
         link(rel='stylesheet' href='/css/index.css')
         link(rel='stylesheet' href='/build/bundle.css')
+        link(rel='icon' type='image/png' href='/img/index.svg')
 
-        script(defer src='/js/bootstrap.bundle.min.js')
         script(defer src='/build/bundle.js')
 
         title= title
 
     body
-        <header></header>
+        header
+            if brandWithEndIcons
+                include headers/brand-with-end-icons
         <main>
             <aside></aside>
             <article></article>
         </main>
-        <footer></footer>
+        footer
+            if footerWithCopyright
+                include footers/footer-with-copyright
 
