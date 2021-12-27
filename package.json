@@ -1,19 +1,26 @@
 {
-  "name": "svelte-app",
-  "version": "1.0.0",
-  "private": true,
+  "name": "svelte-meets-yababay",
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "clean": "rm -rf public/index.html public/vendors src/pug_modules",
+    "clean": "rm -rf public/isndex.html public/vendors src/pug_modules",
     "pug": "node ./scripts/setupPug.js",
-    "index": "rollup --config ./src/pug_modules/rollup.config.js && node ./scripts/setupIndex.js",
+    "html": "rollup --config ./src/pug_modules/rollup.html.js",
+    "settings": "rollup --config ./src/pug_modules/rollup.settings.js",
     "bootstrap": "node ./scripts/setupBootstrap.js",
-    "reset": "npm run clean && npm run pug && npm run index && npm run bootstrap",
+    "static": "npm run html && npm run settings && npm run index && npm run bootstrap",
+    "index": "node ./scripts/setupIndex.js",
+    "index.html": "npm run html && npm run index",
+    "index.settings": "npm run settings && npm run index",
+    "reset": "npm run clean && npm run pug && npm run static",
     "postinstall": "npm run reset",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
+    "import": "^0.0.6",
+    "recursive-copy": "^2.0.13",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
@@ -28,9 +35,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.0.11",
-    "import": "^0.0.6",
-    "recursive-copy": "^2.0.13",
+    "@yababay67/svelte-meets-pug": "^0.0.12",
     "showdown": "^1.9.1",
     "sirv-cli": "^1.0.0"
   }
