@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "clean": "rm -rf public/isndex.html public/vendors src/pug_modules",
+    "clean": "rm -rf public/index.html public/vendors src/pug_modules",
     "pug": "node ./scripts/setupPug.js",
     "html": "rollup --config ./src/pug_modules/rollup.html.js",
     "settings": "rollup --config ./src/pug_modules/rollup.settings.js",
@@ -35,7 +35,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.0.12",
+    "@yababay67/svelte-meets-pug": "^0.0.17",
     "showdown": "^1.9.1",
     "sirv-cli": "^1.0.0"
   }

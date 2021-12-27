@@ -3,6 +3,7 @@
     "brand": "Привет, мир! v.0.0.12",
     "copyright": "Михаил Беляков",
 
+    "githubLink": "https://github.com/yababay/svelte-meets-yababay",
     "headerMainFooter": true,
     "withBootstrap": true,
     "brandWithEndIcons": true,
