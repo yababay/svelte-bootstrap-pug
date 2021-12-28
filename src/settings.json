@@ -4,10 +4,15 @@
     "copyright": "Михаил Беляков",
 
     "githubLink": "https://github.com/yababay/svelte-meets-yababay",
+
     "withAsideMenu": true,
     "withCommunity": true,
     "headerMainFooter": true,
     "withBootstrap": true,
     "brandWithEndIcons": true,
-    "footerWithCopyright": true
+    "footerWithCopyright": true,
+    "navbarIcons": [
+        {"icon": "community"},
+        {"icon": "github"}
+    ]
 }
