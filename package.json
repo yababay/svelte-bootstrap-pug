@@ -15,7 +15,7 @@
     "index.html": "npm run html && npm run index",
     "index.settings": "npm run settings && npm run index",
     "reset": "npm run clean && npm run pug && npm run static",
-    "postinstall": "npm run reset",
+    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static )",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {

@@ -1,18 +1,8 @@
 {
     "title": "Привет, мир!",
-    "copyright": "Михаил Беляков",
-
-    "githubLink": "https://github.com/yababay/svelte-meets-yababay",
-
-    "useHashRouting":      true,
-    "withAsideMenu":       true,
-    "withCommunity":       true,
-    "headerMainFooter":    true,
-    "withBootstrap":       true,
-    "brandWithEndIcons":   true,
-    "footerWithCopyright": true,
 
     "brand": "Привет, мир!",
+    "githubLink": "https://github.com/yababay/svelte-meets-yababay",
     "navbarIcons": [
         {"icon": "community"},
         {"icon": "github"}
@@ -23,5 +13,15 @@
         {"title": "Первая ссылка", "icon": "book", "link": "#first"},
         {"title": "Вторая ссылка", "icon": "book", "link": "#second"},
         {"title": "Третья ссылка", "icon": "book", "link": "#third"}
-    ]
+    ],
+
+    "useHashRouting":      true,
+    "withAsideMenu":       true,
+    "withCommunity":       true,
+    "headerMainFooter":    true,
+    "withBootstrap":       true,
+    "brandWithEndIcons":   true,
+    "footerWithCopyright": true,
+
+    "copyright": "Михаил Беляков"
 }
