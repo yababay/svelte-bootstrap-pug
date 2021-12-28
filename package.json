@@ -15,7 +15,7 @@
     "index.html": "npm run html && npm run index",
     "index.settings": "npm run settings && npm run index",
     "reset": "npm run clean && npm run pug && npm run static",
-    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static )",
+    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static && cp .gitignore /tmp && cat /tmp/.gitignore | grep -v pug_modules > .gitignore)",
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
