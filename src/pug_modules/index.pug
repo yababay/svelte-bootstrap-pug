@@ -23,10 +23,16 @@ html(lang="ru")
         header
             if brandWithEndIcons
                 include headers/brand-with-end-icons
-        <main>
-            <aside></aside>
-            <article></article>
-        </main>
+        main
+            if withAsideMenu
+                aside.d-flex.flex-column.flex-shrink-0.p-3.text-white.bg-light
+                    a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-white.text-decoration-none(href="/")
+                        span.fs-4 Sidebar
+                    hr
+                    ul.nav.nav-pills.flex-column.mb-auto
+                        li.nav-item
+                            a.nav-link.active(href="#" aria-current="page") Home
+                article &nbsp;
         footer
             if footerWithCopyright
                 include footers/footer-with-copyright

@@ -4,6 +4,7 @@
     "copyright": "Михаил Беляков",
 
     "githubLink": "https://github.com/yababay/svelte-meets-yababay",
+    "withAsideMenu": true,
     "withCommunity": true,
     "headerMainFooter": true,
     "withBootstrap": true,
