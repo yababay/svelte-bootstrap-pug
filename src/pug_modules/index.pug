@@ -8,6 +8,9 @@ html(lang="ru")
             link(rel='stylesheet' href='/vendors/css/bootstrap.min.css')
             script(defer src='/vendors/js/bootstrap.bundle.min.js')
 
+        if withAsideMenu
+            link(rel='stylesheet' href='/css/with-aside-menu.css')
+
         if headerMainFooter
             link(rel='stylesheet' href='/css/header-main-footer.css')
 
@@ -25,15 +28,8 @@ html(lang="ru")
                 include headers/brand-with-end-icons
         main
             if withAsideMenu
-                aside.d-flex.flex-column.flex-shrink-0.p-3.text-white.bg-light
-                    a.d-flex.align-items-center.mb-3.mb-md-0.me-md-auto.text-white.text-decoration-none(href="/")
-                        span.fs-4 Sidebar
-                    hr
-                    ul.nav.nav-pills.flex-column.mb-auto
-                        li.nav-item
-                            a.nav-link.active(href="#" aria-current="page") Home
-                article &nbsp;
-        footer
+                include asides/aside-and-article
+        footer.footer
             if footerWithCopyright
                 include footers/footer-with-copyright
 

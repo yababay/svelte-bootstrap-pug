@@ -1,5 +1,5 @@
-import StaticPage  from './pages/StaticPage.svelte'
-import BackendPage from './pages/BackendPage.svelte'
+import StaticPage  from '../pages/StaticPage.svelte'
+import BackendPage from '../pages/BackendPage.svelte'
 
 const home = 'welcome'
 const articleElement = document.querySelector('article')

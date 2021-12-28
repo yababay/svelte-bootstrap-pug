@@ -17,12 +17,22 @@ footer {
     height: var(--footer-height);
 }
 
+header, footer, main {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 :root {
-    --main-min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    --main-min-height: calc(99vh - var(--header-height) - var(--footer-height));
 }
 
 main {
     min-height: var(--main-min-height);
+}
+
+hr {
+    margin: .3rem 0;
 }
 
 @media (min-width: 45em) {

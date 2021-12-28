@@ -2,15 +2,18 @@
     "title": "Привет, мир! v.0.0.12",
     "brand": "Привет, мир! v.0.0.12",
     "copyright": "Михаил Беляков",
+    "asideTitle": "Полезные ссылки:",
 
     "githubLink": "https://github.com/yababay/svelte-meets-yababay",
 
-    "withAsideMenu": true,
-    "withCommunity": true,
-    "headerMainFooter": true,
-    "withBootstrap": true,
-    "brandWithEndIcons": true,
+    "useHashRouting":      true,
+    "withAsideMenu":       true,
+    "withCommunity":       true,
+    "headerMainFooter":    true,
+    "withBootstrap":       true,
+    "brandWithEndIcons":   true,
     "footerWithCopyright": true,
+
     "navbarIcons": [
         {"icon": "community"},
         {"icon": "github"}

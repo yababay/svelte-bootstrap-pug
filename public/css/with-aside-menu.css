@@ -1,0 +1,7 @@
+@media (min-width: 45em) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+}
+

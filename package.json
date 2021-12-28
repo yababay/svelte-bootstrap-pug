@@ -35,7 +35,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.0.18",
+    "@yababay67/svelte-meets-pug": "^0.1.0",
     "showdown": "^1.9.1",
     "sirv-cli": "^1.0.0"
   }
