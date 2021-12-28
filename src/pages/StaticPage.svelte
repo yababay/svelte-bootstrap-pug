@@ -4,8 +4,9 @@
     const converter = new showdown.Converter()
 
     export let link
+    export let prefix = 'content'
 
-    const fetched = fetch(`content/${link}${link.endsWith(".md") ? "" : ".md"}`)
+    const fetched = fetch(`${prefix}/${link}${link.endsWith(".md") ? "" : ".md"}`)
         .then(res => res.text())
         .then(txt => converter.makeHtml(txt))
 

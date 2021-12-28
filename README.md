@@ -1,2 +1,4 @@
 # svelte-meets-yababay
-Yababay's template for frontend web development.
+
+Yababay's template for web-frontend.
+

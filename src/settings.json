@@ -15,6 +15,8 @@
         {"title": "Третья ссылка", "icon": "book", "link": "#third"}
     ],
 
+    "logoFormat": "svg",
+
     "useHashRouting":      true,
     "withAsideMenu":       true,
     "withCommunity":       true,

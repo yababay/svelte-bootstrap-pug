@@ -3,19 +3,23 @@
   "version": "0.0.1",
   "private": false,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
+
+    "build":      "rollup -c",
+    "dev":        "rollup -c -w",
+    "html":       "rollup --config ./src/pug_modules/rollup.html.js",
+    "settings":   "rollup --config ./src/pug_modules/rollup.settings.js",
+
+    "bootstrap":  "node ./scripts/setupBootstrap.js",
+    "pug":        "node ./scripts/setupPug.js",
+    "index.html": "node ./scripts/setupIndex.js",
+
+    "index":  "npm run settings && npm run html && npm run index.html",
+    "reset":  "npm run clean && npm run pug && npm run static",
+    "static": "npm run index && npm run bootstrap",
+
     "clean": "rm -rf public/index.html public/vendors src/pug_modules",
-    "pug": "node ./scripts/setupPug.js",
-    "html": "rollup --config ./src/pug_modules/rollup.html.js",
-    "settings": "rollup --config ./src/pug_modules/rollup.settings.js",
-    "bootstrap": "node ./scripts/setupBootstrap.js",
-    "static": "npm run html && npm run settings && npm run index && npm run bootstrap",
-    "index": "node ./scripts/setupIndex.js",
-    "index.html": "npm run html && npm run index",
-    "index.settings": "npm run settings && npm run index",
-    "reset": "npm run clean && npm run pug && npm run static",
-    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static && cp .gitignore /tmp && cat /tmp/.gitignore | grep -v pug_modules > .gitignore)",
+    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static )",
+
     "start": "sirv public --no-clear"
   },
   "devDependencies": {
