@@ -10,9 +10,15 @@ if(settings.navbarIcons){
 }
 
 if(settings.asideLinks){
-    new AsideLinks({
-        target: document.querySelector('aside ul')
-    })
+    const uls = document.querySelectorAll('aside ul')
+    for(let i in Array.from(uls)){
+        new AsideLinks({
+            target: uls[i],
+            props: {
+                links: settings.asideLinks[i].links 
+            }
+        })
+    }
 }
 
 if(settings.useHashRouting){

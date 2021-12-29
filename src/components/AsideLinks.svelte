@@ -1,13 +1,19 @@
 <script>
-    import settings from '../settings.json'
-    import Icon from '@yababay67/svelte-meets-bootstrap-icons/book.svelte'
+    import BookIcon from '@yababay67/svelte-meets-bootstrap-icons/book.svelte'
+    import SignpostIcon from '@yababay67/svelte-meets-bootstrap-icons/signpost.svelte'
+    export let links
 </script>
 
-{#each settings.asideLinks as link}
+{#each links as link}
     <li>
         <a href={link.link} class="nav-link link-secondary">
-            <Icon size="24" />
+            {#if link.icon == 'signpost'}
+                <SignpostIcon size="24" />
+            {:else}
+                <BookIcon size="24" />
+            {/if}
             {link.title}
         </a>
     </li>
 {/each}
+

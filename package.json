@@ -1,33 +1,28 @@
 {
   "name": "svelte-meets-yababay",
   "version": "0.0.1",
-  "private": false,
   "scripts": {
-
-    "build":      "rollup -c",
-    "dev":        "rollup -c -w",
-    "html":       "rollup --config ./src/pug_modules/rollup.html.js",
-    "settings":   "rollup --config ./src/pug_modules/rollup.settings.js",
-
-    "bootstrap":  "node ./scripts/setupBootstrap.js",
-    "pug":        "node ./scripts/setupPug.js",
-    "index.html": "node ./scripts/setupIndex.js",
-
-    "index":  "npm run settings && npm run html && npm run index.html",
-    "reset":  "npm run clean && npm run pug && npm run static",
+    "pug": "node ./scripts/setupPug.js",
+    "bootstrap": "node ./scripts/setupBootstrap.js",
+    "gitignore": "node ./scripts/setupGitignore.js",
+    "html": "rollup --config src/pug_modules/scripts/rollup.html.js",
+    "settings": "rollup --config src/pug_modules/scripts/rollup.settings.js",
+    "index.html": "node ./src/pug_modules/scripts/index.js",
+    "index": "npm run html && npm run settings && npm run index.html",
     "static": "npm run index && npm run bootstrap",
-
-    "clean": "rm -rf public/index.html public/vendors src/pug_modules",
-    "postinstall": "[ -f public/index.html ] || (npm run pug && npm run static )",
-
-    "start": "sirv public --no-clear"
+    "postinstall": "npm run pug && npm run static && npm gitignore",
+    "compile": "rollup -c",
+    "dev": "rollup -c -w",
+    "clean": "rm -rf docs/index.html docs/vendors src/pug_modules",
+    "reset": "npm run clean && npm run postinstall",
+    "start": "sirv docs --no-clear"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "@rollup/plugin-run": "^2.1.0",
-    "import": "^0.0.6",
+    "n-readlines": "^1.0.1",
     "recursive-copy": "^2.0.13",
     "rollup": "^2.3.4",
     "rollup-plugin-css-only": "^3.1.0",
@@ -39,8 +34,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.1.0",
-    "showdown": "^1.9.1",
+    "@yababay67/svelte-meets-bootstrap-icons": "^0.0.7",
+    "@yababay67/svelte-meets-pug": "^0.2.0",
     "sirv-cli": "^1.0.0"
   }
 }

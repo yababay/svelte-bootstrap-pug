@@ -18,9 +18,9 @@ footer {
 }
 
 header, footer, main {
-    margin: 0;
+    margin:  0;
     padding: 0;
-    border: 0;
+    border:  0;
 }
 
 :root {
