@@ -6,7 +6,7 @@
 
 {#each links as link}
     <li>
-        <a href={link.link} class="nav-link link-secondary">
+        <a href={link.link} class={`nav-link link-${link.style || "secondary"}`}>
             {#if link.icon == 'signpost'}
                 <SignpostIcon size="24" />
             {:else}

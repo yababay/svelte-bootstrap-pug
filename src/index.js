@@ -3,17 +3,20 @@ import NavbarIcons from './components/NavbarIcons.svelte'
 import AsideLinks  from './components/AsideLinks.svelte'
 import settings from './settings.json'
 
-if(settings.navbarIcons){
+const navUl = document.querySelector('nav ul')
+
+if(settings.navbarIcons && navUl){
     new NavbarIcons({
-        target: document.querySelector('nav ul')
+        target: navUl
     })
 }
 
-if(settings.asideLinks){
-    const uls = document.querySelectorAll('aside ul')
-    for(let i in Array.from(uls)){
+const asideUls = document.querySelectorAll('aside ul')
+
+if(settings.asideLinks && asideUls && asideUls.length){
+    for(let i in Array.from(asideUls)){
         new AsideLinks({
-            target: uls[i],
+            target: asideUls[i],
             props: {
                 links: settings.asideLinks[i].links 
             }
@@ -21,7 +24,7 @@ if(settings.asideLinks){
     }
 }
 
-if(settings.useHashRouting){
+if(settings.withHashRouting){
     useHashRouting()
 }
 
