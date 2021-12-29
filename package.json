@@ -10,7 +10,7 @@
     "index.html": "node ./src/pug_modules/scripts/index.js",
     "index": "npm run html && npm run settings && npm run index.html",
     "static": "npm run index && npm run bootstrap",
-    "postinstall": "npm run pug && npm run static && npm gitignore",
+    "postinstall": "npm run pug && npm run static && npm run gitignore",
     "compile": "rollup -c",
     "dev": "rollup -c -w",
     "clean": "rm -rf docs/index.html docs/vendors src/pug_modules",
