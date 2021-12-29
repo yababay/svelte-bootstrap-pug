@@ -16,16 +16,16 @@
             "links": [
                 {"link": "#first-first.md",  "title": "Первая ссылка", "icon": "book"},
                 {"link": "#first-second.md", "title": "Вторая ссылка", "icon": "book"},
-                {"link": "#first-third-is-absent.md",  "title": "Третья ссылка", "icon": "book", "style": "danger"}
+                {"link": "#first-third.md",  "title": "Третья ссылка", "icon": "book"}
             ]
         },
         {
             "title": "Вторая секция", 
             "link": "#second",
             "links": [
-                {"link": "#second-first.md",  "title": "Первая ссылка", "icon": "book"},
-                {"link": "#second-second.md", "title": "Вторая ссылка", "icon": "book"},
-                {"link": "#second-third.md",  "title": "Третья ссылка", "icon": "book"}
+                {"link": "#second-first.md",  "title": "Первая ссылка", "icon": "signpost"},
+                {"link": "#second-second.md", "title": "Вторая ссылка", "icon": "signpost"},
+                {"link": "#second-third.md",  "title": "Третья ссылка", "icon": "signpost"}
             ]
         },
         {
@@ -33,7 +33,7 @@
             "link": "#third",
             "links": [
                 {"link": "#third-first.md",  "title": "Первая ссылка", "icon": "book"},
-                {"link": "#third-second.md", "title": "Вторая ссылка", "icon": "book"},
+                {"link": "#third-second-is-absent.md", "title": "Вторая ссылка", "icon": "book", "style": "danger"},
                 {"link": "#third-third.md",  "title": "Третья ссылка", "icon": "book"}
             ]
         }
