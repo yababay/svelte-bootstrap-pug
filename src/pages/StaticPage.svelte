@@ -8,6 +8,7 @@
 
     async function getMarkup() {
         const res = await fetch(`${prefix}/${link}${link.endsWith(".md") ? "" : ".md"}`)
+        if(res.status != 200) throw "Не удалось загрузить запрашиваемый ресурс."
         const txt = await res.text()
         return converter.makeHtml(txt)
     }
@@ -21,7 +22,7 @@
         </div>
     {:catch error}
         <div class="alert alert-danger text-center mt-3" role="alert">
-            Ошибка при загрузке контента.
+            {error}
         </div>
     {/await}
 </section>    

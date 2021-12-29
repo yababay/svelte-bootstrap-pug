@@ -16,7 +16,7 @@
             "links": [
                 {"link": "#first-first.md",  "title": "Первая ссылка", "icon": "book"},
                 {"link": "#first-second.md", "title": "Вторая ссылка", "icon": "book"},
-                {"link": "#first-third.md",  "title": "Третья ссылка", "icon": "book", "style": "info"}
+                {"link": "#first-third-is-absent.md",  "title": "Третья ссылка", "icon": "book", "style": "danger"}
             ]
         },
         {
