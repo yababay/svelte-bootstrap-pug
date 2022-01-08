@@ -10,7 +10,7 @@
     "index.html": "node ./src/pug_modules/scripts/index.js",
     "index": "npm run html && npm run settings && npm run index.html",
     "static": "npm run index && npm run bootstrap",
-    "postinstall": "npm run pug && npm run static && npm run gitignore && npm run git",
+    "postinstall": "npm run pug && npm run static && npm run gitignore",
     "compile": "rollup -c",
     "build": "npm run index && npm run compile",
     "git": "git init && git add .gitignore docs/content docs/img src/settings.json README.md && git commit -am content-only && git checkout -b content && git checkout main && git add . && git commit -am first",
