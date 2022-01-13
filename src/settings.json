@@ -1,12 +1,11 @@
 {
     "title": "Привет, мир!",
     "author": "Михаил Беляков",
-
     "brand": "Привет, мир!",
-    "githubLink": "https://github.com/yababay/svelte-meets-yababay",
+
     "navbarIcons": [
         {"icon": "community"},
-        {"icon": "github"}
+        {"icon": "github", "link": "https://github.com/yababay/svelte-meets-yababay"}
     ],
 
     "asideLinks": [
@@ -39,16 +38,50 @@
         }
     ],
 
+    "withBootstrap":               true,
+    "withSvelte":                  true,
+    "withHashRouting":             true,
+
+    "withHeaderMainFooter":        true,
+    "withBrandAndEndIconsHeader":  true,
+    "withOffcanvasAndArticleMain": true,
+    "withSimpleCopyrightFooter":   true,
+
+    "copyright": true
+}
+{
+    "author": "Михаил Беляков",
+    "title" : "Материалы по альтернативной истории",
+    "brand" : "Моя альтернатива",
+    "description": "Анализ исторических источников, Античность и Средневековье, обнаружение исторических фальсификаций, происхождение славян.",
+    "homeLink": "https://yababay.github.io/humanitarian-blog",
+
+    "navbarIcons": [
+        {"icon": "initialize"},
+        {"icon": "community"},
+        {"icon": "github", "link": "https://github.com/yababay/humanitarian-blog"}
+    ],
+
+    "asideLinks": [
+        {
+            "title": "2022 год:", 
+            "link": "#blog"
+        },
+        {
+            "title": "2021 год:", 
+            "link": "#blog"
+        }
+    ],
+
     "logoFormat": "svg",
 
-    "withBootstrap":              true,
-    "withHeaderMainFooter":       true,
-    "withAsideAndArticleMain":    true,
-    "withSvelte":                 true,
-    "withBrandAndEndIconsHeader": true,
-    "withAsideAndArticleMain":    true,
-    "withSimpleCopyrightFooter":  true,
-    "withHashRouting":            true,
+    "withBootstrap":               true,
+    "withSvelte":                  true,
+    "withHashRouting":             true,
 
-    "copyright": "Михаил Беляков"
+    "withHeaderMainFooter":        true,
+    "withBrandAndEndIconsHeader":  true,
+    "withOffcanvasAndArticleMain": true,
+    "withSimpleCopyrightFooter":   true,
+    
 }
