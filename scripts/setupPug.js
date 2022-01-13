@@ -1,3 +1,5 @@
-var copy = require('@yababay67/svelte-meets-pug')
+const { copyPug, copyCss } = require('@yababay67/svelte-meets-pug')
 
-copy()
+copyPug()
+copyCss()
+

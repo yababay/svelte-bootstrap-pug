@@ -13,7 +13,7 @@
     "postinstall": "npm run pug && npm run static && npm run gitignore",
     "compile": "rollup -c",
     "build": "npm run index && npm run compile",
-    "git": "git init && git add .gitignore docs/content docs/img src/settings.json README.md && git commit -am content-only && git checkout -b content && git checkout main && git add . && git commit -am first",
+    "git": "git init -b main && git add .gitignore docs/content docs/img src/settings.json README.md && git commit -am content-only && git checkout -b content && git checkout main && git add . && git commit -am first",
     "dev": "rollup -c -w",
     "clean": "rm -rf docs/index.html docs/vendors src/pug_modules",
     "reset": "npm run clean && npm run postinstall",
@@ -33,12 +33,12 @@
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-terser": "^7.0.0",
+    "sirv-cli": "^1.0.0",
     "svelte": "^3.0.0"
   },
   "dependencies": {
     "@yababay67/svelte-meets-bootstrap-icons": "^0.0.7",
-    "@yababay67/svelte-meets-pug": "^0.2.3",
-    "showdown": "^1.9.1",
-    "sirv-cli": "^1.0.0"
+    "@yababay67/svelte-meets-pug": "^0.2.5",
+    "showdown": "^1.9.1"
   }
 }
