@@ -1,3 +1,6 @@
-article p {
-    text-align: justify;
+footer {
+    border-top: 1px solid silver;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
