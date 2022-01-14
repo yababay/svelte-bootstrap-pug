@@ -2,7 +2,7 @@
     import Icon from '@yababay67/svelte-meets-bootstrap-icons/github.svelte'
     import settings from '../../settings.json'
 
-    export let link = settings.githubLink || '#/'
+    export let link
     export let title = 'Проект на Github&apos;е'
     export let size = 32
     const props = {title, size}

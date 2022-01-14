@@ -6,9 +6,9 @@
 
 {#each settings.navbarIcons as link}
     {#if link.icon == 'github'}
-        <Github />
+        <Github link={link.link} />
     {/if}
     {#if link.icon == 'community'}
-        <Community />
+        <Community link={link.link} />
     {/if}
 {/each}

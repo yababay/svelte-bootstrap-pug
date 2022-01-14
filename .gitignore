@@ -4,9 +4,9 @@
 .tmp/
 
 # Static factory. Don't forget to exclude these in real project!
-src/pug_modules/
-docs/vendors/
-docs/build/
-docs/index.html
-package-lock.json
+/src/pug_modules/
+/docs/vendors/
+/docs/pug-modules/
+/docs/build/
+/docs/index.html
 
