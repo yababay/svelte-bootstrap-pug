@@ -1,12 +1,13 @@
 /node_modules/
+/src/styles/
 
 # Trash
 .tmp/
 
-# Static factory. Don't forget to exclude these in real project!
-/src/pug_modules/
-/docs/vendors/
-/docs/pug-modules/
-/docs/build/
+# Static factory
+
 /docs/index.html
+/docs/pug-modules/
+/docs/vendors/
+/src/pug_modules/
 
