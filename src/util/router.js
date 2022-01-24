@@ -1,7 +1,7 @@
 import StaticPage  from '../pages/StaticPage.svelte'
 import BackendPage from '../pages/BackendPage.svelte'
 
-const home = 'welcome'
+const home = 'README'
 const articleElement = document.querySelector('article')
 
 let lastURL = document.URL;

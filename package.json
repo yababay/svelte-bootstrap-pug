@@ -11,9 +11,10 @@
     "index.html": "node ./src/pug_modules/scripts/index.js",
     "index": "npm run html && npm run settings && npm run index.html",
     "static": "npm run index && npm run bootstrap && npm run pug-css",
-    "postinstall": "npm run pug-src && npm run static && npm run gitignore",
+    "postinstall": "npm run pug-src && npm run static && npm run gitignore && npm run readme",
+    "readme": "cp README.md docs/content",
     "compile": "rollup -c",
-    "build": "npm run index && npm run compile",
+    "build": "npm run readme && npm run index && npm run compile",
     "git": "git init -b main && git add .gitignore docs/content docs/img src/settings.json README.md && git commit -am content-only && git checkout -b content && git checkout main && git add . && git commit -am first",
     "dev": "rollup -c -w",
     "clean-docs": "rm -rf docs/index.html docs/vendors docs/pug-modules/",
@@ -44,8 +45,8 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-bootstrap-icons": "^0.0.7",
-    "@yababay67/svelte-meets-pug": "^0.3.1",
+    "@yababay67/svelte-meets-bootstrap-icons": "^0.0.9",
+    "@yababay67/svelte-meets-pug": "^0.3.2",
     "showdown": "^1.9.1"
   }
 }
