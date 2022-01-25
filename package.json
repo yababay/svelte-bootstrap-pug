@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@yababay67/svelte-meets-bootstrap-icons": "^0.0.9",
-    "@yababay67/svelte-meets-pug": "^0.3.4",
+    "@yababay67/svelte-meets-pug": "^0.3.5",
     "showdown": "^1.9.1"
   }
 }
