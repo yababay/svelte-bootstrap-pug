@@ -3,7 +3,9 @@
     "title":  "Привет, мир!",
     "brand":  "Привет, мир!",
     "description": "Шаблон (template) для проектов на основе svelte с использованием pug.",
-    "homeLink": "/",
+    "homeLink": "#/",
+
+    "svgSprite": ["github", "person-plus"],
 
     "navbarIcons": [
         {"icon": "community", "link": "#community"},
