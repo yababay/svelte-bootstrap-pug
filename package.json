@@ -44,7 +44,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.3.8",
+    "@yababay67/svelte-meets-pug": "^0.3.9",
     "showdown": "^1.9.1"
   }
 }
