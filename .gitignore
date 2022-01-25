@@ -7,7 +7,7 @@
 /.venv/bin/
 /.venv/include/
 /.venv/lib/python*
-/.venv/lib64/
+/.venv/lib64
 /.venv/pyvenv.cfg
 /.venv/share/
 __pycache__/
