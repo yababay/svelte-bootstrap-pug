@@ -2,9 +2,9 @@
   "name": "svelte-meets-yababay",
   "version": "0.0.1",
   "scripts": {
-    "pug-copy":   "rollup --config node_modules/svelte-meets-pug/scripts/rollup.copy.js",  
-    "pug-sprite": "rollup --config node_modules/svelte-meets-pug/scripts/rollup.sprite.js",  
-    "pug-html":   "rollup --config node_modules/svelte-meets-pug/scripts/rollup.html.js",  
+    "pug-copy":   "rollup --config node_modules/@yababay/svelte-meets-pug/scripts/rollup.copy.js",  
+    "pug-sprite": "rollup --config node_modules/@yababay/svelte-meets-pug/scripts/rollup.sprite.js",  
+    "pug-html":   "rollup --config node_modules/@yababay/svelte-meets-pug/scripts/rollup.html.js",  
     "pug-postinstall": "npm run pug-copy && npm run pug-sprite && npm run pug-html",  
     "pug-src": "node ./scripts/setupPugSrc.js",
     "pug-css": "node ./scripts/setupPugCss.js",
