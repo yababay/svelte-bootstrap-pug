@@ -8,8 +8,8 @@
     "svgSprite": ["github", "person-plus", "book", "signpost"],
 
     "navbarIcons": [
-        {"icon": "community", "link": "#community"},
-        {"icon": "github", "link": "https://github.com/yababay/svelte-meets-yababay"}
+        {"icon": "person-plus", "link": "#community", "title": "Обратная связь"},
+        {"icon": "github", "link": "https://github.com/yababay/svelte-meets-yababay", "title": "Проект на Гитхабе"}
     ],
 
     "tocToggle": "Показать список материалов",
@@ -49,7 +49,7 @@
     "withSvelte":      true,
     "withHashRouting": true,
     "withHMFLayout":   true,
-    "withIndexCss":    true,
+    "withCustomCss":   true,
 
     "headerLayout":   "brand-and-end-icons",
     "mainLayout":     "offcanvas-and-article",
