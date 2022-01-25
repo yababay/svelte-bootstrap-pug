@@ -2,29 +2,16 @@
   "name": "svelte-meets-yababay",
   "version": "0.0.1",
   "scripts": {
-    "pug-copy":   "rollup --config node_modules/@yababay67/svelte-meets-pug/scripts/rollup.static.js",  
-    "pug-sprite": "rollup --config node_modules/@yababay67/svelte-meets-pug/scripts/rollup.sprite.js",  
-    "pug-html":   "rollup --config node_modules/@yababay67/svelte-meets-pug/scripts/rollup.html.js",  
-    "pug-postinstall": "npm run pug-copy && npm run pug-sprite && npm run pug-html",  
-    "pug-src": "node ./scripts/setupPugSrc.js",
-    "pug-css": "node ./scripts/setupPugCss.js",
-    "bootstrap": "node ./scripts/setupBootstrap.js",
-    "gitignore": "node ./scripts/setupGitignore.js",
-    "index.html": "rollup --config src/pug_modules/scripts/rollup.html.js",
-    "sprite": "rollup --config src/pug_modules/scripts/rollup.sprite.js",
-    "index": "npm run sprite && npm run index.html",
-    "static": "npm run index && npm run bootstrap && npm run pug-css",
-    "postinstall-prev": "npm run pug-src && npm run static && npm run gitignore && npm run readme",
+    "pug-static":  "rollup --config node_modules/@yababay67/svelte-meets-pug/scripts/rollup.static.js",  
+    "pug-html":    "rollup --config node_modules/@yababay67/svelte-meets-pug/scripts/rollup.html.js",  
+    "pug-clean":   "rm -rf src/pug_modules && docs/pug-modules/",
+    "postinstall": "npm run pug-static && npm run pug-html && npm run readme",  
+    "gitignore":   "node ./scripts/setupGitignore.js",
     "readme": "cp README.md docs/content",
     "compile": "rollup -c",
-    "build": "npm run readme && npm run index && npm run compile",
-    "git": "git init -b main && git add .gitignore docs/content docs/img src/settings.json README.md && git commit -am content-only && git checkout -b content && git checkout main && git add . && git commit -am first",
+    "build": "npm run readme && npm run pug-html && npm run compile",
+    "git": "git init -b main && git add .gitignore docs/content docs/media/logo.svg src/settings.json README.md && git commit -am content && git checkout -b content && git checkout main && git add . && git commit -am first",
     "dev": "rollup -c -w",
-    "clean-docs": "rm -rf docs/index.html docs/vendors docs/pug-modules/",
-    "clean-src": "rm -rf src/pug_modules",
-    "clean": "npm run clean-docs && npm run clean-src",
-    "reset": "npm run clean && npm run postinstall",
-    "coderdocs": "rollup --config ./src/styles/rollup.config.js ",
     "start": "sirv docs --no-clear"
   },
   "devDependencies": {
@@ -48,7 +35,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.4.1",
+    "@yababay67/svelte-meets-pug": "^0.4.4",
     "showdown": "^1.9.1"
   }
 }

@@ -5,7 +5,7 @@
     "description": "Шаблон (template) для проектов на основе svelte с использованием pug.",
     "homeLink": "#/",
 
-    "svgSprite": ["github", "person-plus"],
+    "svgSprite": ["github", "person-plus", "book", "signpost"],
 
     "navbarIcons": [
         {"icon": "community", "link": "#community"},
