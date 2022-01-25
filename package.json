@@ -7,12 +7,12 @@
     "pug-clean":   "rm -rf src/pug_modules && docs/pug-modules/",
     "postinstall": "npm run pug-static && npm run pug-html && npm run readme",  
     "gitignore":   "node ./scripts/setupGitignore.js",
-    "readme": "cp README.md docs/content",
-    "compile": "rollup -c",
-    "build": "npm run readme && npm run pug-html && npm run compile",
-    "git": "git init -b main && git add .gitignore docs/content docs/media/logo.svg src/settings.json README.md && git commit -am content && git checkout -b content && git checkout main && git add . && git commit -am first",
-    "dev": "rollup -c -w",
-    "start": "sirv docs --no-clear"
+    "readme":      "cp README.md docs/content",
+    "build":       "npm run readme && npm run pug-html && npm run compile",
+    "git":         "git init -b main && git add .gitignore docs/content docs/media/logo.svg src/settings.json README.md && git commit -am content && git checkout -b content && git checkout main && git add . && git commit -am first",
+    "compile":     "rollup -c",
+    "dev":         "rollup -c -w",
+    "start":       "sirv docs --no-clear"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
@@ -30,8 +30,6 @@
     "rollup-plugin-terser": "^7.0.0",
     "jstransformer-markdown-it": "^2.1.0",
     "sirv-cli": "^1.0.0",
-    "rollup-plugin-scss": "^3.0.0",
-    "sass": "^1.49.0",
     "svelte": "^3.0.0"
   },
   "dependencies": {

@@ -1,5 +1,4 @@
 /node_modules/
-/src/styles/
 
 # Trash
 .tmp/
@@ -8,6 +7,5 @@
 
 /docs/index.html
 /docs/pug-modules/
-/docs/vendors/
 /src/pug_modules/
 
