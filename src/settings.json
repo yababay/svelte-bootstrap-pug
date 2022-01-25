@@ -7,7 +7,7 @@
 
     "svgSprite": ["github", "person-plus", "book", "signpost"],
 
-    "navbarIcons": [
+    "navbarLinks": [
         {"icon": "person-plus", "link": "#community", "title": "Обратная связь"},
         {"icon": "github", "link": "https://github.com/yababay/svelte-meets-yababay", "title": "Проект на Гитхабе"}
     ],

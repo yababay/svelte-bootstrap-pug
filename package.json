@@ -8,7 +8,10 @@
     "postinstall": "npm run pug-static && npm run pug-html && npm run readme",  
     "gitignore":   "node ./scripts/setupGitignore.js",
     "readme":      "cp README.md docs/content",
-    "index":       "npm run readme && npm run pug-html",
+    "sprite":      "npm run pug-static",
+    "index":       "npm run pug-html",
+    "html":        "npm run pug-html",
+    "settings":    "npm run pug-html",
     "build":       "npm run index && npm run compile",
     "git":         "git init -b main && git add .gitignore docs/content docs/media/logo.svg src/settings.json README.md && git commit -am content && git checkout -b content && git checkout main && git add . && git commit -am first",
     "compile":     "rollup -c",
@@ -34,7 +37,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "@yababay67/svelte-meets-pug": "^0.4.5",
+    "@yababay67/svelte-meets-pug": "^0.4.6",
     "showdown": "^1.9.1"
   }
 }

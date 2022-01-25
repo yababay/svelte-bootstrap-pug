@@ -3,7 +3,7 @@
     import NavbarItem from './NavbarItem.svelte'
 </script>
 
-{#each settings.navbarIcons as link}
+{#each settings.navbarLinks as link}
     <NavbarItem {...link} />
 {/each}
 

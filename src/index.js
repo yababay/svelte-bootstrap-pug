@@ -1,12 +1,12 @@
 import useHashRouting from './util/router.js'
-import NavbarIcons from './components/NavbarIcons.svelte'
+import NavbarLinks from './components/NavbarLinks.svelte'
 import AsideLinks  from './components/AsideLinks.svelte'
 import settings from './settings.json'
 
 const navUl = document.querySelector('nav ul')
 
-if(settings.navbarIcons && navUl){
-    new NavbarIcons({
+if(settings.navbarLinks && navUl){
+    new NavbarLinks({
         target: navUl
     })
 }
@@ -44,3 +44,11 @@ if(settings.mainLayout == 'offcanvas-and-article'){
 
     tocShowObserver.observe(header)
 }
+
+/*
+const scrollToTop = (x, y) => {
+ window.scrollTo(x, y);
+};
+scrollToTop(0, 0);
+
+ */
