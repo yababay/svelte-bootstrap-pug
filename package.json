@@ -16,6 +16,7 @@
     "git":         "git init -b main && git add .gitignore docs/content docs/media/logo.svg src/settings.json README.md && git commit -am content && git checkout -b content && git checkout main && git add . && git commit -am first",
     "compile":     "rollup -c",
     "dev":         "rollup -c -w",
+    "venv":        "python3 -m venv .venv",
     "start":       "sirv docs --no-clear"
   },
   "devDependencies": {

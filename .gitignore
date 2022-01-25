@@ -3,6 +3,16 @@
 # Trash
 .tmp/
 
+# Backend
+/.venv/bin/
+/.venv/include/
+/.venv/lib/python*
+/.venv/lib64
+/.venv/pyvenv.cfg
+/.venv/share/
+__pycache__/
+*.env
+
 # Static factory
 
 /docs/index.html
