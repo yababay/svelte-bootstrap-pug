@@ -1,9 +1,9 @@
 <script>
-    import AsideItem from './AsideItem.svelte'
+    import AsideLink from './AsideLink.svelte'
     export let links
 </script>
 
 {#each links as link}
-    <AsideItem {...link} />
+    <AsideLink {...link} />
 {/each}
 

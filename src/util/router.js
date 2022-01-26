@@ -3,6 +3,7 @@ import BackendPage from '../pages/BackendPage.svelte'
 
 const home = 'README'
 const articleElement = document.querySelector('article')
+const local = document.URL.includes('localhost')
 
 let lastURL = document.URL;
 
@@ -24,7 +25,7 @@ function switchHash(){
     const Fn = /^\/api($|\/.*)/.test(link) ? BackendPage : StaticPage
     new Fn({
         target: articleElement, 
-        props: {link}
+        props: {link, local}
     })
 }
 

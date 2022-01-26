@@ -1,19 +1,14 @@
 <script>
-    import Showdown from 'showdown'
+    import Article from '../components/Article.svelte'
 
-    const converter = new Showdown.Converter()
-    const tocClose = document.querySelector('#toc-offcanvas .btn-close')
-
-    export let link
+    export let link, local
     export let prefix = 'content'
+    let editing = false
 
-    async function getMarkup() {
-        const res = await fetch(`${prefix}/${link}${link.endsWith(".md") ? "" : ".md"}`)
-        if(res.status != 200) throw "Не удалось загрузить запрашиваемый ресурс."
-        const txt = await res.text()
-        closeOffcanvas()
-        return converter.makeHtml(txt)
-    }
+    const fileName = `${link}${link.endsWith(".md") ? "" : ".md"}`
+    link = `${prefix}/${fileName}`
+    
+    const tocClose = document.querySelector('#toc-offcanvas .btn-close')
 
     function closeOffcanvas(){
         if(tocClose) tocClose.click()
@@ -22,20 +17,25 @@
 
 </script>
 
-<section class="container">
-    {#await getMarkup() then markup}
-        <div class="comfortable-reading mt-3">
-            {@html markup}
-        </div>
-    {:catch error}
-        <div class="alert alert-danger text-center mt-3" role="alert">
-            {error + closeOffcanvas()}
-        </div>
-    {/await}
+<section class="container comfortable-reading">
+    {#if local}
+        <p class="text-end button-holder">
+            <button class="btn btn-primary same-width" on:click={e => editing = !editing}>{editing ? "Сохранить" : "Редактировать"}</button>
+        </p>
+    {/if}
+    <Article link={link} editing={editing} close={closeOffcanvas} file={fileName}/>
 </section>    
 
 <style>
     .comfortable-reading {
-        max-width: 50rem;
+        max-width: 80ch;
+    }
+
+    .button-holder {
+        margin: 2rem 0;
+    }
+    .same-width {
+        width: 12rem;
     }
 </style>
+
