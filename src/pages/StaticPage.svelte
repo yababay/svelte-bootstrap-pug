@@ -27,10 +27,6 @@
 </section>    
 
 <style>
-    .comfortable-reading {
-        max-width: 80ch;
-    }
-
     .button-holder {
         margin: 2rem 0;
     }

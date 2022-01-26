@@ -1,6 +1,15 @@
+.comfortable-reading {
+    max-width: 80ch;
+    text-align: justify;
+}
+
+.comfortable-reading h1,
+.comfortable-reading h2,
+.comfortable-reading h3,
+.comfortable-reading h4
+{
+    text-align: left;
+}
 footer {
-    border-top: 1px solid silver;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+    border-top: 1px solid silver !important;
 }
