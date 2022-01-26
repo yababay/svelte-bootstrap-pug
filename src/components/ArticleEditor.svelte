@@ -1,7 +1,16 @@
 <script>
-    import { onDestroy } from 'svelte'
+    import { onMount, onDestroy } from 'svelte'
     export let content, close, file
     let editor
+
+    onMount(()=>{
+        /*const main = document.querySelector('main')
+        const editorBox = editor.getBoundingClientRect()
+        const mainBox = editor.getBoundingClientRect()
+        const top = editorBox.top - mainBox.top
+        editor.height = (main.offsetHeight - top) * .9*/
+    })
+
     onDestroy(async ()=>{
         const res = await fetch(`/api/save/${file}`, {
             method: 'post', 
@@ -24,6 +33,8 @@
 <style>
     .editor {
         width: 100%;
-        height: '480px'
+        min-height: 640px;
+        background-color: #282828;
+        color: #ded795;
     }
 </style>
