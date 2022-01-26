@@ -5,7 +5,8 @@
     export let editing, link, close, file
 
     async function content() {
-        const res = await fetch(link)
+        const url = `${link}?r=${Math.random()}`
+        const res = await fetch(url)
         if(res.status != 200) throw "Не удалось загрузить запрашиваемый ресурс."
         content = await res.text()
         close()
