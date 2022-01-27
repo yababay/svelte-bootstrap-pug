@@ -33,8 +33,10 @@
 <style>
     .editor {
         width: 100%;
+        max-width: 80ch;
         min-height: 640px;
         background-color: #282828;
         color: #ded795;
+        margin: 0 auto;
     }
 </style>

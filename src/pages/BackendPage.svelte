@@ -5,13 +5,15 @@
     export let link
 </script>    
 
-{#if link == '/api/initialize'}
-    <Initializer />
-{/if}
+<section class="container comfortable-reading">
+    {#if link == '/api/initialize'}
+        <Initializer />
+    {/if}
 
-<!--
-{#if link == '/api/editor'}
-    <Editor />
-{/if}
--->
+    <!--
+    {#if link == '/api/editor'}
+        <Editor />
+    {/if}
+    -->
+</section>
 

@@ -55,11 +55,12 @@
         }
     ],
 
-    "withBootstrap":   true,
-    "withSvelte":      true,
-    "withHashRouting": true,
-    "withHMFLayout":   true,
-    "withCustomCss":   true,
+    "withBootstrap":          true,
+    "withSvelte":             true,
+    "withHashRouting":        true,
+    "withHMFLayout":          true,
+    "withComfortableReading": true,
+    "withCustomCss":          true,
 
     "headerLayout":   "brand-and-end-icons",
     "mainLayout":     "offcanvas-and-article",
