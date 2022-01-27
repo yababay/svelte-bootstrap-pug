@@ -19,9 +19,9 @@
 
 <section class="container comfortable-reading">
     {#if local}
-        <p class="text-end button-holder">
+        <div class="text-end button-holder">
             <button class="btn btn-primary same-width" on:click={e => editing = !editing}>{editing ? "Сохранить" : "Редактировать"}</button>
-        </p>
+        </div>
     {/if}
     <Article link={link} editing={editing} close={closeOffcanvas} file={fileName}/>
 </section>    
