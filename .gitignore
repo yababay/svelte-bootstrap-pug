@@ -3,6 +3,9 @@
 # Trash
 .tmp/
 
+# Compiled
+docs/build/
+
 # Backend
 /.venv/bin/
 /.venv/include/
