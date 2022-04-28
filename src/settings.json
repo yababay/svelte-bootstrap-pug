@@ -1,0 +1,70 @@
+{
+    "author": "Михаил Беляков",
+    "title":  "Привет, мир!",
+    "brand":  "Привет, мир!",
+    "description": "Шаблон (template) для проектов на основе svelte с использованием pug.",
+    "homeLink": "#/",
+
+    "svgSprite": [
+        "arrow-bar-up",
+        "card-checklist",
+        "plus-square-dotted",
+        "book", 
+        "signpost", 
+        "person-plus", 
+        "github"
+    ],
+
+    "navbarLinks": [
+        {"icon": "plus-square-dotted", "link": "#/api/initialize", "title": "Создать материал"},
+        {"icon": "card-checklist", "link": "#/api/publish", "title": "Опубликовать материалы"},
+        {"icon": "person-plus", "link": "#community", "title": "Обратная связь"},
+        {"icon": "github", "link": "https://github.com/yababay/svelte-meets-yababay", "title": "Проект на Гитхабе"}
+    ],
+
+    "tocToggle": "Показать список материалов",
+    "tocHeader": "Список материалов:",
+
+    "asideLinks": [
+        {
+            "title": "Первая секция", 
+            "link": "#first",
+            "links": [
+                {"link": "#first-first.md",  "title": "Первая ссылка", "icon": "book"},
+                {"link": "#first-second.md", "title": "Вторая ссылка", "icon": "book"},
+                {"link": "#first-third.md",  "title": "Третья ссылка", "icon": "book"}
+            ]
+        },
+        {
+            "title": "Вторая секция", 
+            "link": "#second",
+            "links": [
+                {"link": "#second-first.md",  "title": "Первая ссылка", "icon": "signpost"},
+                {"link": "#second-second.md", "title": "Вторая ссылка", "icon": "signpost"},
+                {"link": "#second-third.md",  "title": "Третья ссылка", "icon": "signpost"}
+            ]
+        },
+        {
+            "title": "Третья секция", 
+            "link": "#third",
+            "links": [
+                {"link": "#third-first.md",  "title": "Первая ссылка", "icon": "book"},
+                {"link": "#third-second-is-absent.md", "title": "Вторая ссылка", "icon": "book", "style": "danger"},
+                {"link": "#third-third.md",  "title": "Третья ссылка", "icon": "book"}
+            ]
+        }
+    ],
+
+    "withBootstrap":          true,
+    "withSvelte":             true,
+    "withHashRouting":        true,
+    "withHMFLayout":          true,
+    "withComfortableReading": true,
+    "withCustomCss":          true,
+
+    "headerLayout":   "brand-and-end-icons",
+    "mainLayout":     "offcanvas-and-article",
+    "footerLayout":   "simple-copyright",
+
+    "copyright": true
+}
