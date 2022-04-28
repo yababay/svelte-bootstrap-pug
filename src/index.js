@@ -1,4 +1,5 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js'
 
 /*
 import useHashRouting from './util/router.js'
@@ -50,4 +51,4 @@ if(settings.mainLayout == 'offcanvas-and-article'){
 
  */
 
-console.log('ready')
+if(!window.bootstrap) window.bootstrap = bootstrap
