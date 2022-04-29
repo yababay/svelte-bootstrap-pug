@@ -1,11 +1,18 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import bootstrap from 'bootstrap/dist/js/bootstrap.bundle.min.js'
+import ArticleRouter from './router/ArticleRouter'
+import { MarkdownRouter, setRouter } from '@yababay67/hash-router'
+import settings from './settings.json'
+
+
+if(settings.withHashRouting){
+    setRouter(ArticleRouter)
+}
 
 /*
 import useHashRouting from './util/router.js'
 import NavbarLinks from './components/NavbarLinks.svelte'
 import AsideLinks  from './components/AsideLinks.svelte'
-import settings from './settings.json'
 
 const navUl = document.querySelector('nav ul')
 
